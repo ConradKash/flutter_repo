@@ -29,5 +29,30 @@ void main(){
     if (reverse == word) {
         printf('This is palindrome')
     }
+    //Question 4
+    m = [5,10,15,20,25,30]
+    List revList (List msg){
+        reversedLi = [];
+        for(k = (m.length - 1), k = m.length; k--){
+            reversedLi = reversedLi.add(m[k]);
+        }
+        return reversedLi
+    }
+    revList(m);
+    //question 5
+    list revSent ( String uMsg){
+        List words = uMsg.split(' ');
+        List fun = []
+        for (int l = 0; l < words.length; l++) {
+            fun = fun.add(words[l]);
+        }
+        return fun
+    }
+    do {
+    print('Enter a string: ');
+    inputString = stdin.readLineSync();
+    }
+    while (inputString == null);
+    revSent(inputString);
 }
 
